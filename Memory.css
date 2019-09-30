@@ -5,18 +5,19 @@ body {
 
 section {
     display: inline-block;
-    width: 30%;
+    width: 20%;
     border: 1px solid black;
     height: 120px;
     padding: 3px;
     margin-bottom: 5px;
     margin-right: 5px;
+    color: red;
 }
 
 div {
     padding-top: 10px;
 }
 
-/* .hidden {
+.hidden {
     background-color: black;
-} */
+}
