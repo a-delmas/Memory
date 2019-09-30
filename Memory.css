@@ -1,0 +1,22 @@
+body {
+    width: 400px;
+    margin:auto;
+}
+
+section {
+    display: inline-block;
+    width: 30%;
+    border: 1px solid black;
+    height: 120px;
+    padding: 3px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+div {
+    padding-top: 10px;
+}
+
+/* .hidden {
+    background-color: black;
+} */
