@@ -1,5 +1,6 @@
 // var numbers = ["1", "2", "3", "4", "5", "6","1", "2", "3", "4", "5", "6"];
-
+var click1 = null
+var click2 = null
 
 var nb = document.getElementById("nb")
 var btn = document.getElementById("bouton")
@@ -36,7 +37,25 @@ btn.addEventListener("click", function () {
 
             cellule.addEventListener("click", function () {
                 this.classList.remove("hidden");
-                })
+                if (click1 == null){
+                    click1=this
+                }
+                else {
+                    click2=this
+                   
+                    if (click1.innerHTML == click2.innerHTML){
+                            // alert("OK")
+                    }
+                    else{
+                        click1.setAttribute("class", "hidden")
+                        click2.setAttribute("class", "hidden")
+                        // alert("non")
+                    }
+
+                    click1 = null
+                    click2 = null
+                }
+            })
 
         }
     }
